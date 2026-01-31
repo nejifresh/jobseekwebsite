@@ -882,7 +882,7 @@ export default function HomePage() {
                   className="flex flex-col sm:flex-row items-center gap-4"
                 >
                   <Link
-                    href="/support"
+                    href="https://givebutter.com/c/pAZiwi"
                     className="inline-flex items-center gap-2 bg-white text-primary-700 font-bold px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] w-full sm:w-auto justify-center"
                   >
                     <HeartIcon className="h-5 w-5 text-rose-500" />
