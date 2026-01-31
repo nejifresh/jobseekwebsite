@@ -11,7 +11,7 @@ const navLinks = [
   { href: "/#how-it-works", label: "How It Works" },
   { href: "/#stories", label: "Success Stories" },
   { href: "/#employers", label: "For Employers" },
-  { href: "/#donate", label: "Donate" },
+  { href: "/#support", label: "Support" },
   { href: "/about", label: "About" },
 ];
 

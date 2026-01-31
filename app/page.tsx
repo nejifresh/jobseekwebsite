@@ -95,7 +95,7 @@ const features = [
   },
   {
     icon: BriefcaseIcon,
-    title: "Ban-the-Box Employers",
+    title: "Employers",
     description:
       "850+ employers committed to fair-chance hiring. They evaluate your skills first, not your record. Your past doesn't disqualify you here.",
     image:
@@ -163,7 +163,7 @@ const steps = [
     number: "03",
     title: "Connect with Reentry Employers",
     description:
-      "Get matched with ban-the-box employers who actively hire returning citizens. No more wasted applications.",
+      "Get matched with employers who actively hire returning citizens. No more wasted applications.",
     icon: BriefcaseIcon,
   },
   {
@@ -173,16 +173,6 @@ const steps = [
       "With a stable job, mentor support, and community—build the life that keeps you free for good.",
     icon: TrophyIcon,
   },
-];
-
-// Employer logos
-const employers = [
-  { name: "Dave's Killer Bread", logo: "🍞" },
-  { name: "Greyston Bakery", logo: "🧁" },
-  { name: "Nehemiah Manufacturing", logo: "🏭" },
-  { name: "Checkr", logo: "✓" },
-  { name: "Homeboy Industries", logo: "🏠" },
-  { name: "CEO Works", logo: "💼" },
 ];
 
 export default function HomePage() {
@@ -243,7 +233,10 @@ export default function HomePage() {
                 variants={fadeInUp}
                 className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12"
               >
-                <Link href="/signup" className="btn-primary text-lg group">
+                <Link
+                  href="https://jobseek.works/signup"
+                  className="btn-primary text-lg group"
+                >
                   <span className="relative z-10 flex items-center gap-2">
                     Start Your Journey
                     <ArrowRightIcon className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -269,7 +262,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckIcon className="h-5 w-5 text-emerald-500" />
-                  <span>850+ Ban-the-Box Employers</span>
+                  <span>850+ Employers</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckIcon className="h-5 w-5 text-emerald-500" />
@@ -293,8 +286,8 @@ export default function HomePage() {
                 {/* Main Image */}
                 <div className="absolute inset-0 rounded-[3rem] overflow-hidden shadow-2xl shadow-primary-500/20">
                   <Image
-                    src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80"
-                    alt="Man in professional suit representing successful reentry"
+                    src="/manchange.png"
+                    alt="Man transforming from prison to professional success"
                     fill
                     className="object-cover"
                     priority
@@ -402,36 +395,6 @@ export default function HomePage() {
             <ChevronRightIcon className="h-5 w-5 rotate-90" />
           </motion.div>
         </motion.div>
-      </section>
-
-      {/* Employer Logos */}
-      <section className="py-16 bg-gray-50 border-y border-gray-100">
-        <div className="container-wide">
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-center text-sm font-medium text-gray-500 uppercase tracking-wider mb-10"
-          >
-            Trusted by Fair-Chance Employers Nationwide
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="flex flex-wrap items-center justify-center gap-8 md:gap-16"
-          >
-            {employers.map((employer) => (
-              <div
-                key={employer.name}
-                className="flex items-center gap-3 text-gray-400 hover:text-gray-600 transition-colors"
-              >
-                <span className="text-3xl">{employer.logo}</span>
-                <span className="font-semibold text-lg">{employer.name}</span>
-              </div>
-            ))}
-          </motion.div>
-        </div>
       </section>
 
       {/* Stats Section */}
@@ -899,9 +862,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Donation / Mission Section */}
+      {/* Support / Mission Section */}
       <section
-        id="donate"
+        id="support"
         className="section-padding bg-white relative overflow-hidden"
       >
         <div className="container-wide">
@@ -1011,11 +974,11 @@ export default function HomePage() {
                   className="flex flex-col sm:flex-row items-center gap-4"
                 >
                   <Link
-                    href="/donate"
+                    href="/support"
                     className="inline-flex items-center gap-2 bg-white text-primary-700 font-bold px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] w-full sm:w-auto justify-center"
                   >
                     <HeartIcon className="h-5 w-5 text-rose-500" />
-                    Donate Now
+                    Support Now
                   </Link>
                   <Link
                     href="/about#mission"
@@ -1064,13 +1027,19 @@ export default function HomePage() {
               variants={fadeInUp}
               className="flex flex-col sm:flex-row items-center justify-center gap-4"
             >
-              <Link href="/signup" className="btn-primary text-lg group">
+              <Link
+                href="https://jobseek.works/signup"
+                className="btn-primary text-lg group"
+              >
                 <span className="relative z-10 flex items-center gap-2">
                   Start Your Journey Free
                   <ArrowRightIcon className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </Link>
-              <Link href="/employers" className="btn-secondary">
+              <Link
+                href="https://jobseek.works/signup"
+                className="btn-secondary"
+              >
                 I'm an Employer
               </Link>
             </motion.div>
