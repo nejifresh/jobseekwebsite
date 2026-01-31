@@ -109,29 +109,17 @@ const testimonials = [
   {
     quote:
       "I served 12 years and came out expecting rejection. JobSeek connected me with employers who practice what they preach. Three years out, zero violations, and I'm training new hires. Reentry done right.",
-    author: "Marcus J.",
     role: "Warehouse Supervisor",
-    image:
-      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=200&q=80",
-    company: "Dave's Killer Bread",
   },
   {
     quote:
       "Coming out after 5 years, I couldn't even write a resume. The voice feature let me talk about my kitchen work inside, and now I'm feeding people in a hospital instead of a prison. That's redemption.",
-    author: "Sarah M.",
     role: "Food Service Lead",
-    image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80",
-    company: "Greyston Bakery",
   },
   {
     quote:
       "My mentor did 8 years himself before becoming a success story. He understood parole meetings, housing struggles, all of it. Having someone who's been there made all the difference in staying out for good.",
-    author: "James T.",
     role: "HVAC Technician",
-    image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&q=80",
-    company: "Nehemiah Manufacturing",
   },
 ];
 
@@ -661,7 +649,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <motion.div
-                key={testimonial.author}
+                key={index}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -677,23 +665,12 @@ export default function HomePage() {
                   "{testimonial.quote}"
                 </p>
                 <div className="flex items-center gap-4">
-                  <div className="relative">
-                    <Image
-                      src={testimonial.image}
-                      alt={testimonial.author}
-                      width={56}
-                      height={56}
-                      className="h-14 w-14 rounded-full object-cover ring-4 ring-primary-100"
-                    />
+                  <div className="h-14 w-14 rounded-full bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center">
+                    <span className="text-white font-bold text-lg">RC</span>
                   </div>
                   <div>
-                    <p className="font-bold text-gray-900">
-                      {testimonial.author}
-                    </p>
+                    <p className="font-bold text-gray-900">Returning Citizen</p>
                     <p className="text-sm text-gray-500">{testimonial.role}</p>
-                    <p className="text-xs text-primary-600 font-medium">
-                      {testimonial.company}
-                    </p>
                   </div>
                 </div>
               </motion.div>
@@ -920,6 +897,104 @@ export default function HomePage() {
                   </Link>
                 </motion.div>
               </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section id="about" className="section-padding bg-white">
+        <div className="container-wide">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={stagger}
+            className="text-center max-w-3xl mx-auto mb-16"
+          >
+            <motion.div
+              variants={fadeInUp}
+              className="inline-flex items-center gap-2 bg-primary-50 border border-primary-200 rounded-full px-5 py-2 mb-6"
+            >
+              <UserGroupIcon className="h-5 w-5 text-primary-600" />
+              <span className="text-sm font-semibold text-primary-700">
+                Our Leadership
+              </span>
+            </motion.div>
+            <motion.h2
+              variants={fadeInUp}
+              className="heading-2 text-gray-900 mb-6"
+            >
+              Meet the Team Behind
+              <span className="block gradient-text">JobSeek AI</span>
+            </motion.h2>
+            <motion.p variants={fadeInUp} className="body-large">
+              Led by founders who understand both the technology and the
+              mission.
+            </motion.p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            {/* Neji Tawo - CTO */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 border border-gray-100 card-hover text-center"
+            >
+              <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-lg shadow-primary-500/30">
+                <Image
+                  src="/neji.jpg"
+                  alt="Neji Tawo"
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-1">
+                Neji Tawo
+              </h3>
+              <p className="text-primary-600 font-semibold mb-4">
+                Co-Founder & Chief Technology Officer
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                20+ years in software engineering, AI systems, and
+                infrastructure. Former Amazon-supported founder with a track
+                record of building scalable platforms for underserved
+                populations.
+              </p>
+            </motion.div>
+
+            {/* Romy Antoine - CEO */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.15 }}
+              className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 border border-gray-100 card-hover text-center"
+            >
+              <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-lg shadow-primary-500/30">
+                <Image
+                  src="/romy.jpg"
+                  alt="Romy Antoine"
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-1">
+                Romy Antoine
+              </h3>
+              <p className="text-primary-600 font-semibold mb-4">
+                Co-Founder & Chief Executive Officer
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                2x tech founder with expertise in HR tech, wellness, re-entry
+                workforce programs, and behavior change. Experienced in working
+                with employers, government, and community organizations.
+                Amazon-backed entrepreneur and NIH grant reviewer.
+              </p>
             </motion.div>
           </div>
         </div>
