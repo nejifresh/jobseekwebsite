@@ -64,16 +64,16 @@ const features = [
       "Our AI matches you with employers who actively hire returning citizens. No more applications into the void—these companies want you.",
     image:
       "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
-    color: "from-accent-500 to-accent-700",
+    color: "from-primary-600 to-primary-800",
   },
   {
     icon: UserGroupIcon,
-    title: "Formerly Incarcerated Mentors",
+    title: "Find Your Mentor",
     description:
-      "Connect with mentors who've successfully navigated reentry themselves. Real guidance from people who truly understand your journey.",
+      "Connect with experienced mentors who can guide your career journey. Get real advice, build your network, and stay accountable on your path to success.",
     image:
       "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80",
-    color: "from-amber-500 to-orange-600",
+    color: "from-primary-600 to-primary-800",
   },
   {
     icon: AcademicCapIcon,
@@ -82,7 +82,7 @@ const features = [
       "Free courses designed for returning citizens—from workplace readiness to industry certifications that lead to real jobs.",
     image:
       "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&q=80",
-    color: "from-emerald-500 to-teal-600",
+    color: "from-primary-600 to-primary-800",
   },
   {
     icon: TrophyIcon,
@@ -91,7 +91,7 @@ const features = [
       "Celebrate every milestone—from completing training to landing interviews. Stay motivated on your path to breaking the cycle.",
     image:
       "https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?w=800&q=80",
-    color: "from-primary-500 to-primary-700",
+    color: "from-primary-600 to-primary-800",
   },
   {
     icon: BriefcaseIcon,
@@ -99,17 +99,9 @@ const features = [
     description:
       "850+ employers committed to fair-chance hiring. They evaluate your skills first, not your record. Your past doesn't disqualify you here.",
     image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80",
-    color: "from-primary-700 to-primary-900",
+      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80",
+    color: "from-primary-600 to-primary-800",
   },
-];
-
-// Stats data
-const stats = [
-  { value: "12,500+", label: "Successful Reentries" },
-  { value: "87%", label: "Reduced Recidivism Rate" },
-  { value: "850+", label: "Reentry-Friendly Employers" },
-  { value: "6 Weeks", label: "Average Time to Employment" },
 ];
 
 // Testimonials
@@ -257,15 +249,15 @@ export default function HomePage() {
                 className="flex flex-wrap items-center justify-center lg:justify-start gap-6 text-sm text-gray-500"
               >
                 <div className="flex items-center gap-2">
-                  <CheckIcon className="h-5 w-5 text-emerald-500" />
+                  <CheckIcon className="h-5 w-5 text-purple-600" />
                   <span>Free for Returning Citizens</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckIcon className="h-5 w-5 text-emerald-500" />
+                  <CheckIcon className="h-5 w-5 text-purple-600" />
                   <span>850+ Employers</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckIcon className="h-5 w-5 text-emerald-500" />
+                  <CheckIcon className="h-5 w-5 text-purple-600" />
                   <span>87% Stay Out for Good</span>
                 </div>
               </motion.div>
@@ -306,7 +298,7 @@ export default function HomePage() {
                   className="absolute -left-8 top-1/4 bg-white rounded-2xl p-4 shadow-xl shadow-gray-200/50 border border-gray-100"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center">
+                    <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
                       <CheckIcon className="h-6 w-6 text-white" />
                     </div>
                     <div>
@@ -395,37 +387,6 @@ export default function HomePage() {
             <ChevronRightIcon className="h-5 w-5 rotate-90" />
           </motion.div>
         </motion.div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-24 bg-gradient-to-br from-gray-900 via-primary-950 to-gray-900 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary-500 rounded-full blur-[128px]" />
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent-500 rounded-full blur-[128px]" />
-        </div>
-
-        <div className="container-wide relative z-10">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={stagger}
-            className="grid grid-cols-2 lg:grid-cols-4 gap-8"
-          >
-            {stats.map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                variants={scaleIn}
-                className="text-center"
-              >
-                <div className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-3">
-                  {stat.value}
-                </div>
-                <div className="text-lg text-gray-400">{stat.label}</div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
       </section>
 
       {/* Features Section */}
@@ -608,7 +569,7 @@ export default function HomePage() {
                       key={i}
                       className="flex items-center gap-3 text-white/90"
                     >
-                      <CheckIcon className="h-5 w-5 text-emerald-400 flex-shrink-0" />
+                      <CheckIcon className="h-5 w-5 text-purple-300 flex-shrink-0" />
                       <span className="text-sm">{item}</span>
                     </div>
                   ))}
@@ -666,7 +627,7 @@ export default function HomePage() {
                 >
                   <div className="bg-white rounded-3xl p-8 shadow-xl shadow-gray-200/50 border border-gray-100 h-full hover:shadow-2xl hover:shadow-primary-500/10 transition-all duration-500">
                     <div className="relative mb-6">
-                      <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center shadow-lg shadow-primary-500/30">
+                      <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-primary-600 to-primary-800 flex items-center justify-center shadow-lg shadow-primary-500/30">
                         <step.icon className="h-8 w-8 text-white" />
                       </div>
                       <span className="absolute -top-2 -right-2 text-6xl font-bold text-primary-100">
@@ -766,12 +727,9 @@ export default function HomePage() {
       {/* Employers Section */}
       <section
         id="employers"
-        className="section-padding bg-gray-900 relative overflow-hidden"
+        className="section-padding bg-gradient-to-br from-primary-600 via-primary-700 to-accent-600 relative overflow-hidden"
       >
-        <div className="absolute inset-0 opacity-50">
-          <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-primary-600 rounded-full blur-[200px]" />
-          <div className="absolute bottom-1/4 right-0 w-[500px] h-[500px] bg-accent-600 rounded-full blur-[200px]" />
-        </div>
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23ffffff%22 fill-opacity=%220.05%22%3E%3Cpath d=%22M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]" />
 
         <div className="container-wide relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -807,7 +765,7 @@ export default function HomePage() {
                   "Pre-screened, job-ready returning citizens",
                 ].map((benefit, i) => (
                   <div key={i} className="flex items-center gap-3 text-white">
-                    <CheckIcon className="h-6 w-6 text-emerald-400 flex-shrink-0" />
+                    <CheckIcon className="h-6 w-6 text-purple-300 flex-shrink-0" />
                     <span className="text-lg">{benefit}</span>
                   </div>
                 ))}
@@ -846,7 +804,7 @@ export default function HomePage() {
                 className="absolute -right-4 top-1/4 bg-white rounded-2xl p-4 shadow-2xl"
               >
                 <div className="flex items-center gap-3">
-                  <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center">
+                  <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
                     <TrophyIcon className="h-6 w-6 text-white" />
                   </div>
                   <div>
