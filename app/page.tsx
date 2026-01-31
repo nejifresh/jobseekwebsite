@@ -955,9 +955,8 @@ export default function HomePage() {
               variants={fadeInUp}
               className="body-large max-w-2xl mx-auto mb-10"
             >
-              12,500+ returning citizens have used JobSeek AI to find employment
-              and stay free. Stable work breaks the cycle. Your reentry success
-              story starts today.
+              Stable work breaks the cycle. Your reentry success story starts
+              today.
             </motion.p>
             <motion.div
               variants={fadeInUp}
