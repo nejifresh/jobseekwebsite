@@ -494,7 +494,7 @@ export default function HomePage() {
               </div>
 
               <Link
-                href="/signup"
+                href="https://jobseek-ai.vercel.app/"
                 className="inline-flex items-center gap-2 bg-white text-primary-700 font-bold px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]"
               >
                 Try Voice Resume Free
