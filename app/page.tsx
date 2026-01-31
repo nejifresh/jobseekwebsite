@@ -175,7 +175,6 @@ export default function HomePage() {
   });
 
   const heroY = useTransform(scrollYProgress, [0, 1], [0, 200]);
-  const heroOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   return (
     <div className="overflow-hidden">
@@ -190,7 +189,7 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-accent-200/30 via-primary-200/20 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/4" />
 
         <motion.div
-          style={{ y: heroY, opacity: heroOpacity }}
+          style={{ y: heroY }}
           className="container-wide relative z-10"
         >
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -588,10 +587,6 @@ export default function HomePage() {
               Four Steps to
               <span className="block gradient-text">Breaking the Cycle</span>
             </motion.h2>
-            <motion.p variants={fadeInUp} className="body-large">
-              12,500+ returning citizens have used this exact process to find
-              stable employment and stay out for good.
-            </motion.p>
           </motion.div>
 
           <div className="relative">
