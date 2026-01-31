@@ -127,10 +127,10 @@ const testimonials = [
 const steps = [
   {
     number: "01",
-    title: "Share Your Journey",
+    title: "Learn In-Demand Skills",
     description:
-      "Tell us about work programs, certifications, and skills you gained inside. Voice or text—whatever feels right.",
-    icon: MicrophoneIcon,
+      "Access free training courses and certifications designed for returning citizens. Build job-ready skills at your own pace.",
+    icon: AcademicCapIcon,
   },
   {
     number: "02",
@@ -241,11 +241,11 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckIcon className="h-5 w-5 text-purple-600" />
-                  <span>850+ Employers</span>
+                  <span>600K Released Annually</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckIcon className="h-5 w-5 text-purple-600" />
-                  <span>87% Stay Out for Good</span>
+                  <span>68% Recidivism Rate</span>
                 </div>
               </motion.div>
             </motion.div>
@@ -707,9 +707,9 @@ export default function HomePage() {
                 </span>
               </h2>
               <p className="body-large text-gray-300 mb-8">
-                Employment reduces recidivism by up to 50%. When you hire
-                returning citizens, you're not just filling roles—you're
-                breaking cycles of incarceration and transforming communities.
+                With a 68% national recidivism rate, employment is the key to
+                breaking the cycle. When you hire returning citizens, you're not
+                just filling roles—you're transforming lives and communities.
               </p>
 
               <div className="space-y-4 mb-10">
@@ -815,8 +815,8 @@ export default function HomePage() {
                   className="text-lg text-white/80 mb-10 max-w-2xl"
                 >
                   Every year, 600,000 people leave prison—and within 3 years,
-                  two-thirds return. Employment is proven to cut recidivism by
-                  50%. Your donation helps us provide free job matching, resume
+                  68% return. Employment is proven to cut recidivism by 50%.
+                  Your donation helps us provide free job matching, resume
                   building, and mentorship to those who need it most.
                 </motion.p>
 
