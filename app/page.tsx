@@ -934,7 +934,7 @@ export default function HomePage() {
             </motion.p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Neji Tawo - CTO */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
@@ -994,6 +994,38 @@ export default function HomePage() {
                 workforce programs, and behavior change. Experienced in working
                 with employers, government, and community organizations.
                 Amazon-backed entrepreneur and NIH grant reviewer.
+              </p>
+            </motion.div>
+
+            {/* Ray RJ Lewis - CDO */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 border border-gray-100 card-hover text-center"
+            >
+              <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-lg shadow-primary-500/30">
+                <Image
+                  src="/rj.jpeg"
+                  alt="Ray RJ Lewis"
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-1">
+                Ray RJ Lewis, Ph.D
+              </h3>
+              <p className="text-primary-600 font-semibold mb-4">
+                Chief Development Officer
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                PhD, Former NFL Player, and Executive Consultant with extensive
+                experience in leadership development, workforce re-entry, and
+                organizational strategy. Former Walmart & AT&T executive
+                managing billion-dollar portfolios. Founder of RJL Management &
+                Consulting.
               </p>
             </motion.div>
           </div>
