@@ -348,13 +348,13 @@ export default function HomePage() {
                 >
                   <div className="flex items-center gap-3">
                     <div className="flex -space-x-2">
-                      <div className="h-8 w-8 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 ring-2 ring-white flex items-center justify-center text-white text-xs font-bold">
+                      <div className="h-8 w-8 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 ring-2 ring-white flex items-center justify-center text-white text-xs font-bold">
                         M
                       </div>
-                      <div className="h-8 w-8 rounded-full bg-gradient-to-br from-rose-400 to-rose-600 ring-2 ring-white flex items-center justify-center text-white text-xs font-bold">
+                      <div className="h-8 w-8 rounded-full bg-gradient-to-br from-purple-500 to-purple-700 ring-2 ring-white flex items-center justify-center text-white text-xs font-bold">
                         S
                       </div>
-                      <div className="h-8 w-8 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 ring-2 ring-white flex items-center justify-center text-white text-xs font-bold">
+                      <div className="h-8 w-8 rounded-full bg-gradient-to-br from-purple-600 to-purple-800 ring-2 ring-white flex items-center justify-center text-white text-xs font-bold">
                         J
                       </div>
                     </div>
