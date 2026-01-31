@@ -10,7 +10,7 @@ const footerLinks = {
     { label: "Pricing", href: "/pricing" },
   ],
   company: [
-    { label: "About Us", href: "/about" },
+    { label: "Team", href: "/#team" },
     { label: "For Employers", href: "/#employers" },
     { label: "Become a Mentor", href: "/mentors" },
     { label: "Partners", href: "/partners" },

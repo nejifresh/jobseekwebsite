@@ -903,7 +903,7 @@ export default function HomePage() {
       </section>
 
       {/* Team Section */}
-      <section id="about" className="section-padding bg-white">
+      <section id="team" className="section-padding bg-white">
         <div className="container-wide">
           <motion.div
             initial="hidden"
