@@ -370,23 +370,6 @@ export default function HomePage() {
             </motion.div>
           </div>
         </motion.div>
-
-        {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="flex flex-col items-center gap-2 text-gray-400"
-          >
-            <span className="text-sm">Scroll to explore</span>
-            <ChevronRightIcon className="h-5 w-5 rotate-90" />
-          </motion.div>
-        </motion.div>
       </section>
 
       {/* Features Section */}
