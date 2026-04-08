@@ -9,6 +9,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 const navLinks = [
   { href: "/#features", label: "Features" },
   { href: "/#how-it-works", label: "How It Works" },
+  { href: "/jobs", label: "Find Jobs" },
   { href: "/#stories", label: "Success Stories" },
   { href: "/#employers", label: "For Employers" },
   { href: "/#support", label: "Support" },
